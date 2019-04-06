@@ -1,15 +1,18 @@
 <?php
 
-use Dd\Dumper;
+use Symfony\Component\VarDumper\VarDumper;
 
 if (! function_exists('dd')) {
 	function dd ()
 	{
-	    array_map(function ($x) {
-            (new Dumper)->dump($x);
-        }, func_get_args());
+        foreach (func_get_args() as $v) {
+            VarDumper::dump($v);
+        }
+
+        if (1 < func_num_args()) {
+            return func_get_args();
+        }
 
         die(1);
 	}
 }
-

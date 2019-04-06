@@ -1,6 +1,4 @@
-# Dd
-
-使用dd函数代替var_dump当使用非laravel框架时[https://packagist.org/packages/wanfeiyy/dd](https://packagist.org/packages/wanfeiyy/dd)
+# How to use?
 
 ```php
 $arr = ['a'=>'a','b'=>b];
@@ -9,24 +7,14 @@ dd($arr);
 
 ## 	Installation
 
-### With Composer
-
 ```
-$ composer require wanfeiyy/dd
+$ composer require iraldoad/dd
 ```
 
 ```json
 {
-    "require": {
-        "wanfeiyy/dd": "*"
+    "require-dev": {
+        "iraldoad/dd": "*"
     }
 }
 ```
-
-```php
-<?php
-require 'vendor/autoload.php';
-$splObjectStorage = new SplObjectStorage();
-dd($splObjectStorage);
-```
-

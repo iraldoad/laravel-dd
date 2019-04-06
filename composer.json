@@ -1,14 +1,14 @@
 {
-    "name": "wanfeiyy/dd",
-    "description": "use laravel dd replace var_dump",
+    "name": "iraldoad/dd",
+    "description": "use laravel dd in symfony",
     "require": {
-        "symfony/var-dumper": "^3.2"
+        "symfony/var-dumper": "^2.6||^3.0"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "wanfeiyy",
-            "email": "w454852895@163.com"
+            "name": "iraldoad",
+            "email": "iraldoarevalo@gmail.com"
         }
     ],
 	"autoload": {

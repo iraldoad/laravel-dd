@@ -1,5 +1,5 @@
 {
-    "name": "iraldoad/dd",
+    "name": "iraldoad/symfony-dd",
     "description": "use laravel dd in symfony",
     "require": {
         "symfony/var-dumper": "^2.6||^3.0"

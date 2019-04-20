@@ -8,7 +8,7 @@ dd($arr);
 ## 	Installation
 
 ```
-$ composer require iraldoad/dd
+$ composer require iraldoad/symfony-dd
 ```
 
 ```json

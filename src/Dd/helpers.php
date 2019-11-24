@@ -2,13 +2,13 @@
 
 use Symfony\Component\VarDumper\VarDumper;
 
-if (! function_exists('dd')) {
-	function dd ()
-	{
-	foreach (func_get_args() as $v) {
-	    VarDumper::dump($v);
-	}
+if (!function_exists('dd')) {
+    function dd(...$vars)
+    {
+        foreach ($vars as $v) {
+            VarDumper::dump($v);
+        }
 
-	die;
-	}
+        die(1);
+    }
 }

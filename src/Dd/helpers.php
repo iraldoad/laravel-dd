@@ -3,14 +3,12 @@
 use Symfony\Component\VarDumper\VarDumper;
 
 if (!function_exists('dd')) {
-    function dd($vars)
+    function dd()
     {
-        $vars = func_get_args();
-        
-        foreach ($vars as $v) {
+        foreach (func_get_args() as $v) {
             VarDumper::dump($v);
         }
 
-        die(1);
+        die;
     }
 }
